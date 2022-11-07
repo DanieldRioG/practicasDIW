@@ -1,0 +1,79 @@
+.cabecera {
+    background-color: #000;
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+    height: 120%;
+}
+
+nav {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    padding-bottom: 1%;
+    display: block;
+}
+
+#grupoFit {
+    width: 100%;
+    height: auto;
+
+}
+
+#fruta {
+    width: 100%;
+    height: auto;
+
+}
+
+#trainer {
+    width: 100%;
+    height: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+
+}
+
+hr {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000
+}
+
+.banner {
+    display: none;
+}
+
+.flexContainer {
+    display: none;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#enlace {
+    all: unset;
+
+}
+
+#trial {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(128, 128, 1);
+}
