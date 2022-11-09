@@ -1,3 +1,13 @@
+body,
+header,
+nav,
+footer,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 .flexContainer {
     display: flex;
     flex-wrap: nowrap;
@@ -11,14 +21,11 @@
     justify-content: space-between;
     margin-left: 5%;
     padding-bottom: 1px;
-
-
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: auto auto auto;
-
 }
 
 .grid {
@@ -38,7 +45,6 @@
     width: 100%;
     background-color: #000;
     padding-bottom: 1px;
-
 }
 
 nav {
@@ -77,19 +83,16 @@ hr {
 #grupoFit {
     width: 100%;
     height: auto;
-
 }
 
 #fruta {
     width: 100%;
     height: auto;
-
 }
 
 #trainer {
     width: 100%;
     height: auto;
-
 }
 
 figcaption {
@@ -99,7 +102,6 @@ figcaption {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 5%;
-
 }
 
 footer {
@@ -112,7 +114,6 @@ footer {
 
 #enlace {
     all: unset;
-
 }
 
 #trial {

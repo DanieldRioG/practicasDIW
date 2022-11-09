@@ -1,3 +1,13 @@
+body,
+header,
+nav,
+footer,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 .cabecera {
     background-color: #000;
     color: #fff;
