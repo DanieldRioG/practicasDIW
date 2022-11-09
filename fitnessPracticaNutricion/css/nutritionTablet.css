@@ -80,9 +80,7 @@ hr {
 
 
 
-#fig1,
-#fig2,
-#fig3 {
+figcaption {
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
