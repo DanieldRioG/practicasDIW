@@ -1,0 +1,142 @@
+body,
+header,
+nav,
+footer,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.cabecera {
+    background-color: #000;
+    color: #fff;
+    max-width: 100%;
+    text-align: center;
+    height: 120%;
+}
+
+.gridContainer {
+    display: block;
+    text-align: center;
+}
+
+.grid {
+    display: block;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    padding-bottom: 1%;
+    display: block;
+    margin-bottom: 10%;
+}
+
+#grupoFit {
+    width: 100%;
+    height: auto;
+
+}
+
+#fruta {
+    width: 100%;
+    height: auto;
+
+}
+
+#trainer {
+    width: 100%;
+    height: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+
+}
+
+#taco {
+    width: 76%;
+    height: auto;
+
+}
+
+#hortalizas {
+    width: 76%;
+    height: auto;
+
+}
+
+#pollo {
+    width: 76%;
+    height: auto;
+
+}
+
+
+hr {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000
+}
+
+.banner {
+    display: none;
+}
+
+.flexContainer {
+    display: none;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#enlace {
+    all: unset;
+
+}
+
+#trial {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(128, 128, 1);
+}
+
+
+aside {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    font-size: 25px;
+    width: auto;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#cont1,
+#cont2,
+#cont3 {
+    display: block;
+    text-align: justify;
+    width: 75%;
+    margin-left: 12%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5%;
+}
