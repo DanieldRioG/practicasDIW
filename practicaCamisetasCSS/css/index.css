@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+#sepFoot {
+    margin-right: 1%;
+}
+
+hr {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------------header + nav-----------------*/
 #iconoInic {
     width: 20%;
 }
@@ -34,12 +55,15 @@
 
 nav {
     display: flex;
+    margin: auto;
+    max-width: 100%;
 }
 
 #botonMenu {
     width: 30px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 13px;
+    margin-left: 1%;
 }
 
 #productos,
@@ -47,8 +71,282 @@ nav {
 #diseñoCamisetas,
 #contactos {
     margin-left: 1%;
-    margin-top: 15px;
     text-decoration: none;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 1%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.busqueda {
+    margin-left: 5%;
+    width: 35%;
+}
+
+#barraBuscar,
+#botonBuscar {
+    margin: auto;
+    padding: 1.5%;
+    border-radius: 20px;
+    border: 0.5px solid #000;
+    margin-top: 11px;
+}
+
+#barraBuscar {
+    width: 60%;
+}
+
+#botonBuscar {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.busquedaInferior {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#barraBuscarInferior,
+#botonBuscarInferior {
+    margin: auto;
+    padding: 0.7%;
+    border-radius: 20px;
+    border: 0.5px solid #000;
+    margin-top: 11px;
+}
+
+#barraBuscarInferior {
+    width: 30%;
+    margin-left: 25%;
+}
+
+#botonBuscarInferior {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #000;
+    color: #fff;
+}
+
+#darkMode {
+    float: right;
+    margin-left: 3.5%;
+    margin-top: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+#darkModeNoBar {
+    float: right;
+    margin-left: 43.5%;
+    margin-top: 2px;
+    width: 50px;
+    height: 50px;
+}
+
+/*-----------------------Hero------------------------*/
+
+main {
+    background-color: rgb(224, 240, 234);
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.carrusel {
+    text-align: center;
+    padding-top: 5%;
+}
+
+/*--------------------contenido----------------------*/
+
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    text-align: center;
+}
+
+.containerProd {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.prodItem {
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.containerCams {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.camsItem {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenidoCreacion {
+    padding-top: 0.5%;
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    font-family: poppins;
+}
+
+.botones {
+    margin-left: 44%;
+    margin-top: 15%;
+    padding-bottom: 15%;
+}
+
+#botonCrear1,
+#botonCrear2 {
+    width: 25%;
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 30px;
+    border: 0.5px solid #000;
+}
+
+#botonCrear1:hover,
+#botonCrear2:hover {
+    background-color: rgb(178, 218, 180);
+    transition-duration: 0.3s;
+}
+
+#camiseta {
+    float: right;
+    padding-top: 7%;
+    padding-right: 15%;
+}
+
+.containerCrear {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    width: 40%;
+}
+
+.crearItem {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: left;
+    font-family: poppins;
+}
+
+#tipoCam,
+#formaLogo,
+#colorCam,
+#tamañoCamiseta {
+    width: 45%;
+    padding: 1%;
+    border: 0.5px solid #000;
+    border-radius: 20px;
+}
+
+
+.btnCreacion {
+    display: flex;
+    margin-top: 20%;
+    margin-left: 9.5%;
+}
+
+#creacionB1,
+#creacionB2 {
+    padding: 2%;
+    border: 0.5px solid #000;
+    margin-left: 1%;
+    border-radius: 20px;
+    width: 35%;
+}
+
+#creacionB1:hover,
+#creacionB2:hover {
+    background-color: rgb(178, 218, 180);
+    transition-duration: 0.3s;
+}
+
+.todoContacto {
+    padding-top: 3%;
+}
+
+.contenidoContacto {
+    border: 0.5px solid #000;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 20%;
+    padding: 2%;
+}
+
+iframe {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+
+/*----------------------Footer-----------------------*/
+
+
+.footer {
+    margin-left: 1%;
+}
+
+.redes {
+    float: right;
+    border: 1px solid rgb(163, 163, 163);
+    padding: 1%;
+    border-radius: 10px;
+    margin-top: -1.35%;
+}
+
+.metodosPago {
+    border: 0.5px solid rgb(163, 163, 163);
+    padding: 1%;
+    width: 37%;
+    border-radius: 20px;
+}
+
+#aP,
+#visa,
+#masterc,
+#payp {
+    margin-left: 6%;
+    margin-top: 5px;
+}
+
+.plataformas {
+    display: flex;
+    border: 0.5px solid rgb(163, 163, 163);
+    padding: 1%;
+    width: 14%;
+    border-radius: 20px;
+}
+
+#appleP {
+    margin-left: 6%;
+    margin-top: 7px;
 }

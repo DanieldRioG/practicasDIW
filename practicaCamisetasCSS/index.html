@@ -18,25 +18,24 @@
         </div>
     </header>
     <hr>
-    <div class="nav">
-        <nav>
-            <img src="imagenes/menu.png" alt="menu" id="botonMenu"><br>
-            <a href="productos.html" id="productos">Productos</a><br>
-            <a href="camisetasDeUsuarios.html" id="camisetas">Camisetas de usuarios</a><br>
-            <a href="menuCreacion.html" id="diseñoCamisetas">Diseña tu propia camiseta </a><br>
-            <a href="contacto.html" id="contactos">Contacto </a><br>
-
-            <input type="text" id="barraBuscar" name="buscar" placeholder="buscar">
+    <nav>
+        <img src="imagenes/menu.png" alt="menu" id="botonMenu"><br>
+        <a href="productos.html" id="productos">Productos</a><br>
+        <a href="camisetasDeUsuarios.html" id="camisetas">Camisetas de usuarios</a><br>
+        <a href="menuCreacion.html" id="diseñoCamisetas">Diseña tu propia camiseta </a><br>
+        <a href="contacto.html" id="contactos">Contacto </a><br>
+        <div class="busqueda">
+            <input type="text" id="barraBuscar" name="buscar" placeholder="Buscar">
             <button id="botonBuscar">buscar</button>
-            <img src="imagenes/darkMode.png" alt="ModoOscuro" height="50" width="50">
-        </nav>
-    </div>
+        </div>
+        <img src="imagenes/darkMode.png" id="darkMode" alt="ModoOscuro">
+    </nav>
     <hr>
 
     <div class="fondo">
         <main>
             <div class="carrusel">
-                <img src="imagenes/hombreConAbrigo.jpg" alt="hombre con abrigo" height="400" width="600"><br>
+                <img src="imagenes/hombreConAbrigo.jpg" alt="hombre con abrigo" height="500" width="700"><br>
                 <button></button>
                 <button></button>
                 <button></button>
@@ -44,23 +43,32 @@
             </div>
 
             <div class="contenido">
-                <a href="productos.html"><img src="imagenes/camisetaShingeki.jpg" alt="camiseta Shingeki" height="250"
-                        width="200"></a>
-                <p>Productos</p>
-                <a href="camisetasDeUsuarios.html"><img src="imagenes/yotubepelo.jpg" alt="camiseta yotubepelo"
-                        height="250" width="200"></a>
-                <p>Camisetas de usuarios</p>
-                <a href="menuCreacion.html"><img src="imagenes/camisetaFeelsBadMan.jpg" alt="camiseta FeelsBadMan"
-                        height="250" width="200"></a>
-                <p>Diseña tu propia camiseta</p>
+                <div class="menu1">
+                    <a href="productos.html"><img src="imagenes/camisetaShingeki.jpg" alt="camiseta Shingeki"
+                            height="250" width="200"></a>
+                    <p>Productos</p>
+                    <hr>
+                </div>
+                <div class="menu2">
+                    <a href="camisetasDeUsuarios.html"><img src="imagenes/yotubepelo.jpg" alt="camiseta yotubepelo"
+                            height="250" width="200"></a>
+                    <p>Camisetas de usuarios</p>
+                    <hr>
+                </div>
+                <div class="menu3">
+                    <a href="menuCreacion.html"><img src="imagenes/camisetaFeelsBadMan.jpg" alt="camiseta FeelsBadMan"
+                            height="250" width="200"></a>
+                    <p>Diseña tu propia camiseta</p>
+                    <hr>
+                </div>
             </div>
         </main>
     </div>
 
-    <div class="footer">
-        <footer>
+    <footer>
+        <hr id="sepFoot">
+        <div class="footer">
             <div class="redes">
-                <hr />
                 <img src="imagenes/twiiter.png" alt="Twitter" height="30" width="30">
                 <img src="imagenes/yt.png" alt="YouTube" height="30" width="30">
                 <img src="imagenes/reddit.png" alt="Reddit" height="30" width="30">
@@ -68,20 +76,23 @@
                 <img src="imagenes/insta.png" alt="Instagram" height="30" width="30">
             </div>
 
-            <div class="contenido">
-                <p>Metodos de pago</p>
-                <img src="imagenes/googlePay.png" alt="Google Pay" height="30" width="70">
-                <img src="imagenes/applepay.png" alt="Apple Pay" height="30" width="70">
-                <img src="imagenes/visa.png" alt="Visa" height="30" width="70">
-                <img src="imagenes/mastercard.png" alt="Mastercard" height="30" width="70">
-                <img src="imagenes/paypal.png" alt="Paypal" height="30" width="70"><br>
 
-                <p>Descarga la App</p>
-                <img src="imagenes/playstore.png" alt="Play Store" height="30" width="70">
-                <img src="imagenes/appleplay.png" alt="Apple Store" height="30" width="70">
+            <p>Metodos de pago</p>
+            <div class="metodosPago">
+                <img src="imagenes/googlePay.png" id="gP" alt="Google Pay" height="30" width="70">
+                <img src="imagenes/applepay.png" id="aP" alt="Apple Pay" height="30" width="70">
+                <img src="imagenes/visa.png" id="visa" alt="Visa" height="25" width="70">
+                <img src="imagenes/mastercard.png" id="masterc" alt="Mastercard" height="30" width="70">
+                <img src="imagenes/paypal.png" id="payp" alt="Paypal" height="30" width="70">
             </div>
-        </footer>
-    </div>
+
+            <p>Descarga la App</p>
+            <div class="plataformas">
+                <img src="imagenes/playstore.png" id="playS" alt="Play Store" height="40" width="90">
+                <img src="imagenes/appleplay.png" id="appleP" alt="Apple Store" height="26" width="77">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

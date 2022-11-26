@@ -5,49 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Contacto</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="imagenes/icon.png" alt="Erblueb shirts" height="130" width="200"></a>
-        <button>log-in</button>
-        <button>registrarse</button>
+        <a href="index.html"><img src="imagenes/icon.png" id="iconoInic" alt="Erblueb shirts"></a>
+        <div class="botonesHead">
+            <button id="boton1">log-in</button>
+            <button id="boton2">registrarse</button>
+        </div>
     </header>
+    <hr>
+    <nav>
+        <img src="imagenes/menu.png" alt="menu" id="botonMenu"><br>
+        <a href="productos.html" id="productos">Productos</a><br>
+        <a href="camisetasDeUsuarios.html" id="camisetas">Camisetas de usuarios</a><br>
+        <a href="menuCreacion.html" id="diseñoCamisetas">Diseña tu propia camiseta </a><br>
+        <a href="contacto.html" id="contactos">Contacto </a><br>
+        <img src="imagenes/darkMode.png" id="darkModeNoBar" alt="ModoOscuro">
+    </nav>
+    <hr>
 
-    <div class="nav">
-        <nav>
-            <hr>
-            <img src="imagenes/menu.png" alt="menu" height="30" width="30"><br>
-            <a href="productos.html">Productos</a><br>
-            <a href="camisetasDeUsuarios.html">Camisetas de usuarios</a><br>
-            <a href="menuCreacion.html">Diseña tu propia camiseta </a><br>
-            <a href="contacto.html">Contacto </a><br>
-            <hr />
-        </nav>
-    </div>
 
     <div class="fondo">
         <main>
-            <div class="contenido">
-                <p>Telefono de contacto</p>
-                <img src="imagenes/tlfno.png" alt="telefono" height="30" width="30">
-                <p>+34 346 983 354</p><br>
-                <p>Dirección</p>
-                <img src="imagenes/home.png" alt="direccion" height="30" width="30">
-                <p>12333 W Olympic Blvd, Los Angeles, CA 90064, Estados Unidos</p><br>
+            <div class="todoContacto">
+                <div class="contenidoContacto">
+                    <p>Telefono de contacto</p>
+                    <img src="imagenes/tlfno.png" alt="telefono" height="30" width="30">
+                    <p>+34 346 983 354</p><br>
+                    <p>Dirección</p>
+                    <img src="imagenes/home.png" alt="direccion" height="30" width="30">
+                    <p>12333 W Olympic Blvd, Los Angeles, CA 90064, Estados Unidos</p><br>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4608131631107!2d-118.45907808478542!3d34.032048680611396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb138690fbd3%3A0xf986067f5db19f0!2s12333%20W%20Olympic%20Blvd%2C%20Los%20Angeles%2C%20CA%2090064%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1666034584302!5m2!1ses!2ses"
+                    width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4608131631107!2d-118.45907808478542!3d34.032048680611396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb138690fbd3%3A0xf986067f5db19f0!2s12333%20W%20Olympic%20Blvd%2C%20Los%20Angeles%2C%20CA%2090064%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1666034584302!5m2!1ses!2ses"
-                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
     </div>
 
-    <div class="footer">
-        <footer>
+    <footer>
+        <hr id="sepFoot">
+        <div class="footer">
             <div class="redes">
-                <hr />
                 <img src="imagenes/twiiter.png" alt="Twitter" height="30" width="30">
                 <img src="imagenes/yt.png" alt="YouTube" height="30" width="30">
                 <img src="imagenes/reddit.png" alt="Reddit" height="30" width="30">
@@ -55,20 +60,23 @@
                 <img src="imagenes/insta.png" alt="Instagram" height="30" width="30">
             </div>
 
-            <div class="contenido">
-                <p>Metodos de pago</p>
-                <img src="imagenes/googlePay.png" alt="Google Pay" height="30" width="70">
-                <img src="imagenes/applepay.png" alt="Apple Pay" height="30" width="70">
-                <img src="imagenes/visa.png" alt="Visa" height="30" width="70">
-                <img src="imagenes/mastercard.png" alt="Mastercard" height="30" width="70">
-                <img src="imagenes/paypal.png" alt="Paypal" height="30" width="70"><br>
 
-                <p>Descarga la App</p>
-                <img src="imagenes/playstore.png" alt="Play Store" height="30" width="70">
-                <img src="imagenes/appleplay.png" alt="Apple Store" height="30" width="70">
+            <p>Metodos de pago</p>
+            <div class="metodosPago">
+                <img src="imagenes/googlePay.png" id="gP" alt="Google Pay" height="30" width="70">
+                <img src="imagenes/applepay.png" id="aP" alt="Apple Pay" height="30" width="70">
+                <img src="imagenes/visa.png" id="visa" alt="Visa" height="25" width="70">
+                <img src="imagenes/mastercard.png" id="masterc" alt="Mastercard" height="30" width="70">
+                <img src="imagenes/paypal.png" id="payp" alt="Paypal" height="30" width="70">
             </div>
-        </footer>
-    </div>
+
+            <p>Descarga la App</p>
+            <div class="plataformas">
+                <img src="imagenes/playstore.png" id="playS" alt="Play Store" height="40" width="90">
+                <img src="imagenes/appleplay.png" id="appleP" alt="Apple Store" height="26" width="77">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

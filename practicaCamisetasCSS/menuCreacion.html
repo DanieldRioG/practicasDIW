@@ -5,53 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>menuCreacion</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="imagenes/icon.png" alt="Erblueb shirts" height="130" width="200"></a>
-        <button>log-in</button>
-        <button>registrarse</button>
+        <a href="index.html"><img src="imagenes/icon.png" id="iconoInic" alt="Erblueb shirts"></a>
+        <div class="botonesHead">
+            <button id="boton1">log-in</button>
+            <button id="boton2">registrarse</button>
+        </div>
     </header>
-
-    <div class="nav">
-        <nav>
-            <hr>
-            <img src="imagenes/menu.png" alt="menu" height="30" width="30"><br>
-            <a href="productos.html">Productos</a><br>
-            <a href="camisetasDeUsuarios.html">Camisetas de usuarios</a><br>
-            <a href="menuCreacion.html">Diseña tu propia camiseta </a><br>
-            <a href="contacto.html">Contacto </a><br>
-            <hr />
-        </nav>
-    </div>
-
+    <hr>
+    <nav>
+        <img src="imagenes/menu.png" alt="menu" id="botonMenu"><br>
+        <a href="productos.html" id="productos">Productos</a><br>
+        <a href="camisetasDeUsuarios.html" id="camisetas">Camisetas de usuarios</a><br>
+        <a href="menuCreacion.html" id="diseñoCamisetas">Diseña tu propia camiseta </a><br>
+        <a href="contacto.html" id="contactos">Contacto </a><br>
+        <div class="busqueda">
+            <input type="text" id="barraBuscar" name="buscar" placeholder="Buscar">
+            <button id="botonBuscar">buscar</button>
+        </div>
+        <img src="imagenes/darkMode.png" id="darkMode" alt="ModoOscuro">
+    </nav>
+    <hr>
 
     <div class="fondo">
         <main>
-            <div class="contenido">
-                <h1>Creacion de Logos</h1><br>
+            <div class="contenidoCreacion">
+                <h1>Creacion de Logos</h1>
                 <p>Si quieres empezar a crear tu primer diseño puedes hacer click en la primera opcion,
                     esta te llevará directamente a la página de creación de camisetas. Una vez subas tu
                     diseño este quedará dentro de nuestra página y otros usuarios podrán crear camisetas
-                    con tu diseño!
-                    Si por el contrario quieres importar un diseño propio solo tienes que pulsar el botón
+                    con tu diseño!</p>
+                <p>Si por el contrario quieres importar un diseño propio solo tienes que pulsar el botón
                     inferior, al hacerlo el diseño quedará registrado y podras encargar una camiseta con
                     el diseño que has importado. Tanto tú como los demás usuarios podran disfrutar de diseños
                     unicos de la comunidad!</p>
             </div>
             <div class="botones">
-                <a href="creacionCamiseta.html">Crear nuevo Diseño</a><br>
-                <a href="">Subir Diseño</a><br>
+                <form action="creacionCamiseta.html">
+                    <input type="submit" id="botonCrear1" value="Crear nuevo Diseño" />
+                </form>
+                <button type="file" id="botonCrear2">Subir Diseño</button><br>
             </div>
         </main>
     </div>
 
-    <div class="footer">
-        <footer>
+    <footer>
+        <hr id="sepFoot">
+        <div class="footer">
             <div class="redes">
-                <hr />
                 <img src="imagenes/twiiter.png" alt="Twitter" height="30" width="30">
                 <img src="imagenes/yt.png" alt="YouTube" height="30" width="30">
                 <img src="imagenes/reddit.png" alt="Reddit" height="30" width="30">
@@ -59,20 +65,23 @@
                 <img src="imagenes/insta.png" alt="Instagram" height="30" width="30">
             </div>
 
-            <div class="contenido">
-                <p>Metodos de pago</p>
-                <img src="imagenes/googlePay.png" alt="Google Pay" height="30" width="70">
-                <img src="imagenes/applepay.png" alt="Apple Pay" height="30" width="70">
-                <img src="imagenes/visa.png" alt="Visa" height="30" width="70">
-                <img src="imagenes/mastercard.png" alt="Mastercard" height="30" width="70">
-                <img src="imagenes/paypal.png" alt="Paypal" height="30" width="70"><br>
 
-                <p>Descarga la App</p>
-                <img src="imagenes/playstore.png" alt="Play Store" height="30" width="70">
-                <img src="imagenes/appleplay.png" alt="Apple Store" height="30" width="70">
+            <p>Metodos de pago</p>
+            <div class="metodosPago">
+                <img src="imagenes/googlePay.png" id="gP" alt="Google Pay" height="30" width="70">
+                <img src="imagenes/applepay.png" id="aP" alt="Apple Pay" height="30" width="70">
+                <img src="imagenes/visa.png" id="visa" alt="Visa" height="25" width="70">
+                <img src="imagenes/mastercard.png" id="masterc" alt="Mastercard" height="30" width="70">
+                <img src="imagenes/paypal.png" id="payp" alt="Paypal" height="30" width="70">
             </div>
-        </footer>
-    </div>
+
+            <p>Descarga la App</p>
+            <div class="plataformas">
+                <img src="imagenes/playstore.png" id="playS" alt="Play Store" height="40" width="90">
+                <img src="imagenes/appleplay.png" id="appleP" alt="Apple Store" height="26" width="77">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
