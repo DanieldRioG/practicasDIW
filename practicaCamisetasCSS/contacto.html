@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" media="screen and (min-width: 1315px)">
+    <link rel="stylesheet" href="css/indexTablet.css" media="screen and (min-width: 620px) and (max-width: 1314px)">
+    <link rel="stylesheet" href="css/indexMovil.css" media="screen and (max-width: 619px)">
     <title>Contacto</title>
 </head>
 
@@ -20,11 +22,15 @@
     <hr>
     <nav>
         <img src="imagenes/menu.png" alt="menu" id="botonMenu"><br>
-        <a href="productos.html" id="productos">Productos</a><br>
-        <a href="camisetasDeUsuarios.html" id="camisetas">Camisetas de usuarios</a><br>
-        <a href="menuCreacion.html" id="diseñoCamisetas">Diseña tu propia camiseta </a><br>
-        <a href="contacto.html" id="contactos">Contacto </a><br>
-        <img src="imagenes/darkMode.png" id="darkModeNoBar" alt="ModoOscuro">
+        <button onclick="window.location.href='productos.html';" id="productos">Productos</button>
+        <button onclick="window.location.href='camisetasDeUsuarios.html';" id="camisetas">Camisetas de usuarios</button>
+        <button onclick="window.location.href='menuCreacion.html';" id="diseñoCamisetas">Diseña tu camiseta</button>
+        <button onclick="window.location.href='contacto.html';" id="contactos">Contacto</button>
+        <div class="busqueda">
+            <input type="text" id="barraBuscar" name="buscar" placeholder="Buscar">
+            <button id="botonBuscar">buscar</button>
+        </div>
+        <img src="imagenes/darkMode.png" id="darkMode" alt="ModoOscuro">
     </nav>
     <hr>
 

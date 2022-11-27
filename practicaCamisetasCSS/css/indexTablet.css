@@ -57,6 +57,7 @@ nav {
     display: flex;
     margin: auto;
     max-width: 100%;
+    justify-content: space-between;
 }
 
 #botonMenu {
@@ -70,20 +71,22 @@ nav {
 #camisetas,
 #diseñoCamisetas,
 #contactos {
-    margin-left: 2%;
+    margin-left: 1%;
+    background-color: #fff;
     text-decoration: none;
     color: #000;
-    background-color: #fff;
-    width: 10.1%;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 1%;
     margin-bottom: 3px;
     margin-top: 3px;
+    width: 20%;
 }
 
 .busqueda {
+    display: none;
     margin-left: 5%;
     width: 35%;
 }
@@ -171,6 +174,8 @@ main {
     padding-top: 5%;
 }
 
+
+
 /*--------------------contenido----------------------*/
 
 .contenido {
@@ -188,7 +193,7 @@ main {
 
 .containerProd {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     padding: 10px;
 }
 
@@ -200,7 +205,7 @@ main {
 
 .containerCams {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     padding: 10px;
 }
 
@@ -221,9 +226,10 @@ main {
 }
 
 .botones {
-    margin-left: 44%;
+    margin-left: 38%;
     margin-top: 15%;
     padding-bottom: 15%;
+    width: 100%;
 }
 
 #botonCrear1,
@@ -244,7 +250,9 @@ main {
 #camiseta {
     float: right;
     padding-top: 7%;
-    padding-right: 15%;
+    padding-right: 5%;
+    max-width: 50%;
+    height: auto;
 }
 
 .containerCrear {
@@ -324,17 +332,14 @@ iframe {
 }
 
 .redes {
-    float: right;
-    border: 1px solid rgb(163, 163, 163);
     padding: 1%;
     border-radius: 10px;
-    margin-top: -1.35%;
+    margin-top: 1.35%;
 }
 
 .metodosPago {
-    border: 0.5px solid rgb(163, 163, 163);
     padding: 1%;
-    width: 37%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -348,9 +353,8 @@ iframe {
 
 .plataformas {
     display: flex;
-    border: 0.5px solid rgb(163, 163, 163);
     padding: 1%;
-    width: 14%;
+    width: 100%;
     border-radius: 20px;
 }
 
