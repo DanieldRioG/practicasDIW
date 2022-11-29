@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
+img {
+    max-width: 100%;
+}
+
 body {
     padding: 0%;
     margin: 0%;
@@ -338,6 +342,24 @@ iframe {
     border-radius: 20px;
 }
 
+#twitter,
+#yt,
+#reddit,
+#fb,
+#insta {
+    width: 30px;
+    height: 30px;
+}
+
+#aP,
+#visa,
+#masterc,
+#payp,
+#gP {
+    width: 70px;
+    height: 30px;
+}
+
 #aP,
 #visa,
 #masterc,
@@ -357,4 +379,14 @@ iframe {
 #appleP {
     margin-left: 6%;
     margin-top: 7px;
+}
+
+#appleP {
+    height: 26px;
+    width: 77px;
+}
+
+#playS {
+    height: 40px;
+    width: 90px;
 }
