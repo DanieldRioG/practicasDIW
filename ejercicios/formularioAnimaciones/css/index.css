@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One:wght@400;900&display=swap');
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+label {
+    margin-top: 5%;
+    font-family: Nerko One;
+}
+
+#boton {
+    margin-top: 10%;
+    width: inherit;
+    margin-left: 80%;
+}
+
+input:invalid {
+    background-color: rgba(243, 160, 160, 0.705);
+    animation: shake 0.4s;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+@keyframes shake {
+
+    0%,
+    40%,
+    70%,
+    100% {
+        transform: translate(3px);
+    }
+
+    10%,
+    30%,
+    60%,
+    90% {
+        transform: translate(-3px);
+    }
+
+    20%,
+    50%,
+    80% {
+        transform: translate(-3px);
+    }
+}
+
+.pixel {
+    height: 5px;
+    width: 5px;
+    background-color: #000;
+    margin: auto;
+}
