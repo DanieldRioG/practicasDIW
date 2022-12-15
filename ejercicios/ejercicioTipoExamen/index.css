@@ -53,14 +53,15 @@ img {
 
 .cruceta {
     margin-left: 40px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 250px;
     padding-top: 25px;
 }
 
-.fila1 {
-    margin-left: 75px;
+.fila {
+    flex-direction: row;
 }
 
 #arriba {
@@ -113,6 +114,19 @@ img {
 #abajo {
     width: 70px;
     height: 70px;
+}
+
+#a,
+#b,
+#c {
+    box-shadow: 2px 2px #000;
+}
+
+#a:active,
+#b:active,
+#c:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px#fff;
 }
 
 #a,
