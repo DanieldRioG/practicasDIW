@@ -13,16 +13,18 @@
     position: relative;
     margin: auto;
     background-color: rgb(235, 235, 235);
-    width: 400px;
-    height: 507px;
+    width: 550px;
+    height: 607px;
     padding: 10px;
     border: 5px solid #000;
     border-radius: 20px;
+    box-shadow: 7px 7px;
 }
 
 .pantalla {
+    overflow: hidden;
     background-color: rgb(204, 204, 204);
-    height: 230px;
+    height: 300px;
     margin: auto;
     text-align: center;
     padding: 20px;
@@ -31,12 +33,12 @@
 }
 
 img {
-    width: 120px;
-    height: 150px;
+    width: 30px;
+    height: 40px;
 }
 
 #lul {
-    margin-top: 40px;
+    margin-top: 210px;
 }
 
 .botones {
@@ -44,12 +46,17 @@ img {
     border: solid 1px #000;
     border-radius: 10px;
     margin-top: 10px;
+
+    height: 253px;
+    width: 550px;
 }
 
 .cruceta {
+    margin-left: 40px;
     display: block;
     justify-content: space-between;
     width: 250px;
+    padding-top: 25px;
 }
 
 .fila1 {
@@ -61,7 +68,7 @@ img {
     rotate: 90deg;
 }
 
-.animacion {
+.saltar {
     animation: a 0.7s ease-in-out;
 }
 
@@ -78,6 +85,26 @@ img {
 
 #izquierda {
     margin-left: 33px;
+}
+
+.izquierdaA {
+    animation: iz 0.01s linear;
+}
+
+.izquierdaA1 {
+    animation: iz1 3s linear forwards;
+}
+
+.derechaA1 {
+    animation: dere1 2.5s linear forwards;
+}
+
+.abajo {
+    animation: abajo 1s ease-in forwards;
+}
+
+.flotar {
+    animation: flotar 0.8s infinite;
 }
 
 #arriba,
@@ -117,5 +144,90 @@ img {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+
+@keyframes iz1 {
+    0% {
+        transform: translateX(0) rotateY(180deg);
+    }
+
+    30% {
+        transform: translateX(-85px) translateX(-5px) rotateY(180deg);
+    }
+
+    40% {
+        transform: translateX(-100px) translateY(-5px) rotateY(180deg);
+    }
+
+    60% {
+        transform: translateX(-160px) translateY(-5px) rotateY(180deg);
+    }
+
+    80% {
+        transform: translateX(-162px) translateY(-45px) rotateY(180deg);
+    }
+
+    90% {
+        transform: translateX(-195px) translateY(-45px) rotateY(180deg);
+    }
+
+    100% {
+        transform: translateX(-195px) translateY(-45px) rotate(270deg);
+    }
+
+
+}
+
+@keyframes dere1 {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(84px);
+    }
+
+    40% {
+        transform: translateY(-25px) translateX(115px);
+    }
+
+    100% {
+        transform: translateY(-25px) translateX(175px);
+    }
+}
+
+@keyframes abajo {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(55px);
+    }
+
+    100% {
+        transform: translateY(45px) rotate(-90deg);
+    }
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(45px) rotate(-90deg);
+    }
+
+    50% {
+        transform: translateY(50px) rotate(-90deg);
+    }
+
+    100% {
+        transform: translateY(45px) rotate(-90deg);
     }
 }
