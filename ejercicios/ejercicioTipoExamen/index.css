@@ -206,11 +206,11 @@ img {
     }
 
     30% {
-        transform: translateY(-15px);
+        transform: translateY(-15px) translateX(10px);
     }
 
     60% {
-        transform: translateY(55px);
+        transform: translateY(55px) translateX(15px);
     }
 
     100% {
