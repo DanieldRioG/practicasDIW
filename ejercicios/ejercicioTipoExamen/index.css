@@ -43,30 +43,35 @@ img {
 
 .botones {
     display: flex;
+    flex-direction: row;
     border: solid 1px #000;
     border-radius: 10px;
     margin-top: 10px;
-
     height: 253px;
     width: 550px;
 }
 
 .cruceta {
-    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 250px;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .fila {
+    justify-content: space-around;
+    display: flex;
     flex-direction: row;
 }
 
+
+
+
 #arriba {
-    padding-left: 30px;
     rotate: 90deg;
+    box-shadow: 3px -3px rgb(73, 73, 73);
+    border-radius: 25px;
 }
 
 .saltar {
@@ -74,19 +79,43 @@ img {
 }
 
 #abajo {
-    padding-left: 30px;
     rotate: 270deg;
-    margin-left: 75px;
+    box-shadow: -3px 3px rgb(73, 73, 73);
+    border-radius: 25px;
+    margin-bottom: 5%;
 }
 
 #derecha {
     rotate: 180deg;
-    margin-left: 39px;
+    box-shadow: -3px -3px rgb(73, 73, 73);
+    border-radius: 25px;
 }
 
 #izquierda {
-    margin-left: 33px;
+    border-radius: 25px;
+    box-shadow: 3px 3px rgb(73, 73, 73);
 }
+
+#arriba:active {
+    box-shadow: 3px -3px rgb(255, 255, 255);
+    transform: translate(2px, -2px);
+}
+
+#derecha:active {
+    box-shadow: 3px -3px rgb(255, 255, 255);
+    transform: translate(-2px, -2px);
+}
+
+#abajo:active {
+    box-shadow: 3px -3px rgb(255, 255, 255);
+    transform: translate(-2px, 2px);
+}
+
+#izquierda:active {
+    box-shadow: 3px -3px rgb(255, 255, 255);
+    transform: translate(2px, 2px);
+}
+
 
 .izquierdaA {
     animation: iz 0.01s linear;
