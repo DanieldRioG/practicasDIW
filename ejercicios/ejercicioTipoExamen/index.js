@@ -11,7 +11,10 @@ addEventListener("DOMContentLoaded", () => {
     let imagen = document.getElementById("lul");
 
     boton1.addEventListener("click", () => {
-        imagen.style.animation = "a 1s";
+        imagen.classList.remove("animacion");
+        window.requestAnimationFrame(function () {
+            imagen.classList.add("animacion");
+        });
     });
 
     boton2.addEventListener("click", () => {
@@ -44,4 +47,7 @@ addEventListener("DOMContentLoaded", () => {
         imagen.style.transform = "translateX(0)";
         imagen.style.transition = "ease-in 0.3s";
     });
+
+
 });
+
