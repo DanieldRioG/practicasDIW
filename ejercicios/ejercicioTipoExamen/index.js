@@ -49,13 +49,14 @@ addEventListener("DOMContentLoaded", () => {
         remove(imagen)
         imagen.style.transform = "scale(0.7)";
         imagen.style.transition = "ease-in 0.2s";
-        imagen.style.marginTop = "217px";
+        imagen.style.marginTop = "220px";
     });
 
     botonB.addEventListener("click", () => {
         remove(imagen)
         imagen.style.transform = "scale(1.5)";
         imagen.style.transition = "ease-in 0.2s";
+        imagen.style.marginTop = "210px";
     });
 
     botonC.addEventListener("click", () => {
