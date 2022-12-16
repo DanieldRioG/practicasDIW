@@ -20,7 +20,7 @@ addEventListener("DOMContentLoaded", () => {
 
     boton2.addEventListener("click", () => {
         remove(imagen)
-        imagen.style.marginTop = "210px";
+        imagen.style.marginTop = "217px";
         imagen.classList.add("izquierdaA1");
         setTimeout(() => {
             //imagen.classList.remove("izquierdaA");
@@ -28,7 +28,7 @@ addEventListener("DOMContentLoaded", () => {
     });
 
     boton3.addEventListener("click", () => {
-        imagen.style.marginTop = "210px";
+        imagen.style.marginTop = "217px";
         imagen.classList.add("derechaA1");
         setTimeout(() => {
             // imagen.classList.remove("derechaA1");
@@ -49,7 +49,7 @@ addEventListener("DOMContentLoaded", () => {
         remove(imagen)
         imagen.style.transform = "scale(0.7)";
         imagen.style.transition = "ease-in 0.2s";
-        imagen.style.marginTop = "215px";
+        imagen.style.marginTop = "217px";
     });
 
     botonB.addEventListener("click", () => {
@@ -63,7 +63,7 @@ addEventListener("DOMContentLoaded", () => {
         imagen.style.transform = "translateY(0)";
         imagen.style.transform = "translateX(0)";
         imagen.style.transition = "ease-in 0.3s";
-        imagen.style.marginTop = "210px";
+        imagen.style.marginTop = "217px";
     });
 });
 

@@ -33,12 +33,12 @@
 }
 
 img {
-    width: 30px;
-    height: 40px;
+    width: 15px;
+    height: 30px;
 }
 
 #lul {
-    margin-top: 210px;
+    margin-top: 217px;
 }
 
 .botones {
@@ -64,9 +64,6 @@ img {
     display: flex;
     flex-direction: row;
 }
-
-
-
 
 #arriba {
     rotate: 90deg;
