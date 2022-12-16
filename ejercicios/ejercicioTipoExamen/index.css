@@ -32,13 +32,30 @@
     border-radius: 10px;
 }
 
-img {
+.imagen {
     width: 15px;
+    height: 30px;
+}
+
+.imagen2 {
+    width: 21px;
+    height: 30px;
+}
+
+.imagen3 {
+    width: 40px;
     height: 30px;
 }
 
 #lul {
     margin-top: 217px;
+}
+
+#nuke {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    transform: rotate(225deg)
 }
 
 .botones {
@@ -132,6 +149,19 @@ img {
 
 .flotar {
     animation: flotar 0.8s infinite;
+}
+
+.volar {
+    animation: volar 1s ease-in;
+}
+
+.mantenerVuelo {
+    animation: mantenerVuelo 5s linear;
+    animation-iteration-count: infinite;
+}
+
+.tirarNuke {
+    animation: tirarNuke 1.5s linear;
 }
 
 #arriba,
@@ -284,4 +314,52 @@ img {
     100% {
         transform: translateY(45px) rotate(-90deg);
     }
+}
+
+@keyframes volar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes mantenerVuelo {
+    0% {
+        transform: translateY(-200px) rotate(90deg);
+    }
+
+    30% {
+        transform: translateX(200px) translateY(-200px) rotate(90deg);
+    }
+
+    31% {
+        transform: translateX(150px) translateY(-200px) rotate(270deg) rotateY(180deg);
+    }
+
+    60% {
+        transform: translateX(-220px) translateY(-200px) rotate(270deg) rotateY(180deg);
+    }
+
+    61% {
+        transform: translateX(-220px) translateY(-200px) rotate(90deg);
+    }
+
+    100% {
+        transform: translateX(0px) translateY(-200px) rotate(90deg);
+
+    }
+}
+
+@keyframes tirarNuke {
+    0% {
+        transform: translateY(-350px) translateX(400px) rotate(225deg);
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px) rotate(225deg);
+    }
+
 }
