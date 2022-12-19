@@ -13,7 +13,10 @@ addEventListener("DOMContentLoaded", () => {
     let imagen = document.getElementById("pj");
     let imagen2 = document.getElementById("nuke");
 
+    // -------------------------------------------------------------
+
     imagen.classList.add("imagen");
+    imagen.style.marginTop = "217px";
 
     boton1.addEventListener("click", () => {
         remove(imagen)
@@ -56,16 +59,17 @@ addEventListener("DOMContentLoaded", () => {
 
     mini.addEventListener("click", () => {
         remove(imagen);
-        imagen.style.transform = "scale(0.7)";
+        imagen.style.marginTop = "210px";
+        imagen.style.transform = "scale(0.5)";
         imagen.style.transition = "ease-in 0.2s";
-        imagen.style.marginTop = "220px";
+
     });
 
     mega.addEventListener("click", () => {
         remove(imagen);
         imagen.style.transform = "scale(1.5)";
         imagen.style.transition = "ease-in 0.2s";
-        imagen.style.marginTop = "210px";
+        imagen.style.marginTop = "188px";
     });
 
     reset.addEventListener("click", () => {
