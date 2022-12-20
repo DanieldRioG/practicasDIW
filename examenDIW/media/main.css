@@ -1,0 +1,19 @@
+.colorBlack {
+  filter: brightness(0%);
+}
+
+.colorWhite {
+  filter: brightness(0) invert(1);
+}
+
+
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+}
+
+.black {
+  background-color: black;
+}

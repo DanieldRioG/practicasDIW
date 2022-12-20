@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+#livingR {
+    margin-left: 25%;
+    width: 50%;
+    opacity: 0.5;
+}
+
+#menu {
+    filter: invert(1);
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.hero {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 8.7%;
+}
+
+ol {
+    margin-top: 5%;
+    list-style: none;
+    margin: auto;
+}
+
+#air,
+#light {
+    filter: invert(1);
+    padding: 1%;
+}
+
+.cuadro {
+    background-color: rgb(180, 180, 180);
+}
+
+.ele {
+    display: flex;
+    height: 70px;
+    margin: auto;
+    padding: 1%;
+    border: 1px solid #fff;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 3%;
+    color: #fff;
+}
+
+p {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#plant,
+#coffee,
+#air,
+#heating,
+#light {
+    width: 50px;
+    height: 50px;
+}
+
+#lightC,
+#airC {
+    background-color: rgb(73, 216, 161);
+    border: 1px solid rgb(73, 216, 161);
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:699px) {
+
+
+    body {
+        background-color: #000;
+    }
+
+    #livingR {
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    #menu {
+        filter: invert(1);
+        margin-left: 30px;
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    h1 {
+
+        margin: auto;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    ol {
+        margin-top: 5%;
+        list-style: none;
+        margin: auto;
+    }
+
+    #air,
+    #light {
+        filter: invert(1);
+        padding: 1%;
+    }
+
+    .cuadro {
+        background-color: rgb(180, 180, 180);
+    }
+
+    .ele {
+        display: flex;
+        margin: auto;
+        padding: 1%;
+        border: 1px solid #fff;
+        width: 80%;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        color: #fff;
+    }
+
+    p {
+        margin-top: 4%;
+        margin-left: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #plant,
+    #coffee,
+    #air,
+    #heating,
+    #light {
+        width: 50px;
+    }
+
+    #lightC,
+    #airC {
+        background-color: rgb(73, 216, 161);
+        border: 1px solid rgb(73, 216, 161);
+    }
+}

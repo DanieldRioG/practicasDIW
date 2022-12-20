@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#nav2 {
+    display: none;
+}
+
+.container {
+    display: flex;
+}
+
+#home {
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#imagen {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 280px;
+}
+
+nav {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagen {
+    width: 400px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    width: 38.5%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.texto {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+#fecha {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.container3 {
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    height: 700px;
+}
+
+#salas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.todasSalas {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.salasItem {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#salas {
+    color: #fff;
+    padding-top: 10px;
+}
+
+.elemento {
+    background-color: #000;
+    width: 250px;
+    height: 150px;
+}
+
+#kids {
+    filter: invert(1);
+}
+
+footer {
+    background-color: rgb(233, 232, 231);
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.textoFoot {
+    float: right;
+    margin-top: 60px;
+    margin-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#iconoFoot {
+    width: 250px;
+    height: 150px;
+}
+
+@media screen and (min-width:0px) and (max-width:699px) {
+
+    #home {
+        margin: auto;
+    }
+
+    #imagen {
+        margin: auto;
+        margin-bottom: 10%;
+    }
+
+    .imagen {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container1 {
+        display: block;
+    }
+
+    .container3 {
+        margin-top: 50px;
+        width: 85%;
+        display: block;
+        align-items: center;
+        margin: auto;
+        margin-left: 30%;
+    }
+
+    header {
+        margin: auto;
+        width: 105%;
+        text-align: center;
+    }
+
+    #nav2 {
+        margin: auto;
+        text-align: center;
+        display: block;
+        margin-top: 100px;
+        margin-left: -20px;
+        width: 105%;
+    }
+
+    #nav1 {
+        display: none;
+    }
+
+    .todasSalas {
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        width: 300px;
+
+
+    }
+
+    .salasItem {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 50px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: -10%;
+    }
+
+    .textoFoot {
+        float: right;
+        margin-top: 60px;
+        margin-left: 10%;
+        font-size: 20px;
+
+    }
+
+}

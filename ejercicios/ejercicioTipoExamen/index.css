@@ -54,8 +54,19 @@
 #nuke {
     position: absolute;
     top: 0px;
-    right: 0;
-    transform: rotate(225deg)
+    right: 150px;
+    transform: rotate(210deg);
+    visibility: hidden;
+}
+
+#pantallazoBlanco {
+    position: absolute;
+    top: 310px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    left: 250px;
+    visibility: hidden;
 }
 
 .botones {
@@ -161,7 +172,11 @@
 }
 
 .tirarNuke {
-    animation: tirarNuke 1.5s linear;
+    animation: tirarNuke 1s linear;
+}
+
+.explosion {
+    animation: explosion 0.5 linear;
 }
 
 #arriba,
@@ -355,11 +370,22 @@
 
 @keyframes tirarNuke {
     0% {
-        transform: translateY(-350px) translateX(400px) rotate(225deg);
+        transform: translateY(-0px) translateX(-0px) rotate(200deg);
+        visibility: visible;
     }
 
     100% {
-        transform: translateY(0px) translateX(0px) rotate(225deg);
+        transform: translateY(270px) translateX(-130px) rotate(200deg);
+        visibility: visible;
+    }
+}
+
+@keyframes explosion {
+    0% {
+        visibility: visible;
     }
 
+    100% {
+        visibility: visible;
+    }
 }
