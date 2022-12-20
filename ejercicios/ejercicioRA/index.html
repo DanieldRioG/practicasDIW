@@ -33,19 +33,14 @@
     <!-- MatrixCodeType is 3x3 because we have created a 3x3 marker before using the online tool  -->
     <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
         <a-assets>
-            <a-scene>
-                <a-assets>
-                    <img id="my-image" src="descarga.png">
-                </a-assets>
+            <img id="my-image"
+                src="https://cdn.jsdelivr.net/gh/DAW-2022-2023/DIW@main/Tema%206/Monigote/media/circle.jpg">
+        </a-assets>
+        <!-- marker id=0 -->
+        <a-marker type="barcode" value="0">
+            <a-image src="#my-image"></a-image>
+        </a-marker>
 
-                <!-- Using the asset management system. -->
-                <a-image src="#my-image"></a-image>
-            </a-scene>
-            <!-- marker id=0 -->
-            <a-marker type="barcode" value="0">
-                <a-entity gltf-model="#gltf"></a-entity>
-            </a-marker>
-
-            <a-entity camera></a-entity>
+        <a-entity camera></a-entity>
     </a-scene>
 </body>
